@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Invite anyone | Time is money</title>
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="container page-header-content">
+			<a class="page-header-logo" href="index.html">
+				<img class="page-header-logo-image" src="images/time-is-money-logo.png" width="72" height="40" alt="Time is money logo">
+			</a>
+
+			<nav class="main-navigation">
+				<ul class="main-navigation-list">
+					<li class="main-navigation-item">
+						<a class="main-navigation-link main-navigation-link-user" href="#">
+							<img class="main-navigation-user-image" src="images/user.png" width="20" height="22" alt="John Doe image">
+							<span class="main-navigation-user-text">John Doe</span>
+						</a>
+					</li>
+					<li class="main-navigation-item">
+						<a class="main-navigation-link main-navigation-link-outline" href="#">Log out</a>
+					</li>
+				</ul>
+			</nav>
+		</div> <!-- end .container -->
+	</header>
+
+	<main class="page-content">
+		<section class="page-content-main">
+			<div class="container">
+				<h1 class="page-content-title">Your meeting is ready!</h1>
+
+				<section class="card">
+					<div class="card-content">
+						<ul class="card-list">
+							<li class="card-item">
+								<h2 class="card-title">Introductory Meeting</h2>
+								<p class="card-text">Kickoff meeting where we’ll get to know each other and decide future steps.</p>
+							</li>
+							<li class="card-item">
+								<h2 class="card-title">Duration</h2>
+								<p class="card-text">30min</p>
+							</li>
+						</ul>
+					</div> <!-- end .card-content -->
+
+					<footer class="card-footer">
+						<h2 class="card-title card-title-footer">Bid</h2>
+						<p class="card-price">$75</p>
+					</footer>
+				</section> <!-- end .card -->
+
+				<a class="button button-transparent button-small button-icon button-arrow-left" href="create-new-meeting.html">Edit meeting</a>
+			</div> <!-- end .container -->
+		</section>
+
+		<section class="page-content-additional">
+			<div class="container">
+				<h1 class="page-content-title-additional">Invite anyone you want</h1>
+
+				<section class="invite">
+					<form class="invite-form" action="/echo" method="post">
+						<div class="invite-content">
+							<section class="invite-email">
+								<h2 class="invite-title">Invite via email:</h2>
+
+								<ul class="invite-list invite-list-email form-list">
+									<li class="invite-item invite-item-icon form-item">
+										<textarea class="invite-textarea invite-textarea form-textarea" id="description" name="description" placeholder="Separate multiple addresses with a comma. (ex. mark@abc.com, james@abc.com …)"></textarea>
+										<span class="invite-icon invite-icon-description"></span>
+									</li>
+									<li class="invite-item invite-item-checkbox form-item">
+										<input class="invite-input invite-input-checkbox form-input form-input-checkbox" id="check" type="checkbox" name="check">
+										<label class="invite-label invite-label-checkbox" for="check">Add your own message (optional)</label>
+									</li>
+								</ul>
+								<button class="button button-blue button-small invite-button" type="submit">Invite</button>
+							</section> <!-- end .invite-email -->
+
+							<p class="invite-separator separator">or</p>
+
+							<section class="invite-social">
+								<h2 class="invite-title">Share this link:</h2>
+
+								<div class="share">
+									<button class="button share-button share-button-icon form-input" type="button">tmismny.com/5ji31x</button>
+									<span class="share-note">(Tap to copy)</span>
+								</div> <!-- end .share -->
+							</section> <!-- end .invite-social -->
+						</div> <!-- end .invite-content -->
+					</form>
+
+					<a class="button button-transparent button-outline-white" href="create-new-meeting.html">Create Another Meeting</a>
+				</section> <!-- end .invite -->
+			</div> <!-- end .container -->
+		</section> <!-- end .page-content-main -->
+	</main>
+
+	<script src="js/main.min.js"></script>
+</body>
+</html>

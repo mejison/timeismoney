@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Receiver flow | Time is money</title>
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="container page-header-content">
+			<a class="page-header-logo" href="index.html">
+				<img class="page-header-logo-image" src="images/time-is-money-logo.png" width="72" height="40" alt="Time is money logo">
+			</a>
+
+			<nav class="main-navigation">
+				<ul class="main-navigation-list">
+					<li class="main-navigation-item">
+						<a class="main-navigation-link main-navigation-link-user" href="#">
+							<img class="main-navigation-user-image" src="images/user.png" width="20" height="22" alt="John Doe image">
+							<span class="main-navigation-user-text">John Doe</span>
+						</a>
+					</li>
+					<li class="main-navigation-item">
+						<a class="main-navigation-link main-navigation-link-outline" href="#">Log out</a>
+					</li>
+				</ul>
+			</nav>
+		</div> <!-- end .container -->
+	</header>
+
+	<main class="page-content">
+		<section class="page-content-main">
+			<div class="container">
+				<h1 class="page-content-title">Validate Payment Details</h1>
+				<p class="page-content-text page-content-text-m-margin-bottom">We will send you money directly via bank transfer.</p>
+
+				<form class="validate-payment form form-vertical" action="/echo" method="post">
+					<ul class="validate-payment-list validate-payment-list-icon validate-payment-list-user form-list">
+						<li class="validate-payment-item form-item">
+							<input class="validate-payment-input form-input" id="accountName" type="text" name="accountName" placeholder="Account name">
+						</li>
+						<li class="validate-payment-item form-item">
+							<select class="validate-payment-select form-select" id="country" name="country">
+								<option value="Ireland">Ireland</option>
+								<option value="USA">USA</option>
+								<option value="Ukraine">Ukraine</option>
+							</select>
+						</li>
+						<li class="validate-payment-item form-item">
+							<input class="validate-payment-input form-input" id="address" type="text" name="address" placeholder="Address">
+						</li>
+					</ul>
+					<ul class="validate-payment-list validate-payment-list-icon validate-payment-list-card form-list">
+						<li class="validate-payment-item form-item">
+							<select class="validate-payment-select form-select" id="recipientBank" name="recipientBank">
+								<option value="Ireland">Ireland</option>
+								<option value="USA">USA</option>
+								<option value="Ukraine">Ukraine</option>
+							</select>
+						</li>
+						<li class="validate-payment-item form-item">
+							<input class="validate-payment-input form-input" id="accountNumber" type="text" name="accountNumber" placeholder="Account Number">
+						</li>
+						<li class="validate-payment-item form-item">
+							<input class="validate-payment-input form-input" id="cardCode" type="text" name="cardCode" placeholder="Clearing code (US) / IBAN (EU)">
+						</li>
+					</ul>
+
+					<ul class="validate-payment-list validate-payment-list-card form-list">
+						<li class="validate-payment-item form-item">
+							<textarea class="validate-payment-textarea form-textarea" id="note" name="note" placeholder="Note(Optional)"></textarea>
+						</li>
+					</ul>
+
+					<button class="button button-blue button-large" type="submit">Validate</button>
+				</form>
+			</div> <!-- end .container -->
+		</section>
+	</main>
+
+	<script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign up | Time is money</title>
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="container page-header-content">
+			<a class="page-header-logo" href="index.html">
+				<img class="page-header-logo-image" src="images/time-is-money-logo.png" width="72" height="40" alt="Time is money logo">
+			</a>
+		</div> <!-- end .container -->
+	</header>
+
+	<main class="page-content">
+		<section class="page-content-main">
+			<div class="container">
+				<h1 class="page-content-title">Create your account</h1>
+
+				<section class="sign-up">
+					<form class="sign-up-form" action="/echo" method="post">
+						<div class="sign-up-content">
+							<section class="sign-up-email">
+								<h2 class="sign-up-title">Use your email</h2>
+
+								<ul class="sign-up-list form-list">
+									<li class="sign-up-item form-item">
+										<input class="sign-up-input sign-up-input-email form-input" id="email" type="email" name="email" placeholder="Email">
+										<span class="sign-up-icon sign-up-icon-email"></span>
+									</li>
+									<li class="sign-up-item form-item">
+										<input class="sign-up-input sign-up-input-password form-input" id="address" type="password" name="password" placeholder="Password">
+										<span class="sign-up-icon sign-up-icon-lock"></span>
+										<button class="sign-up-icon sign-up-icon-button sign-up-icon-show" type="button" aria-label="Show password"></button>
+									</li>
+								</ul>
+								<button class="button button-blue sign-up-button" type="submit">Sign up</button>
+								<a class="sign-up-link sign-up-link-small" href="#">Forgot your password?</a>
+								<p class="sign-up-note">By creating an account you're accepting our
+									<a class="sign-up-link sign-up-link-small sign-up-link-note" href="#">Terms of Service</a> and our <a class="sign-up-link sign-up-link-small sign-up-link-note" href="#">Privacy Policy</a>.</p>
+							</section> <!-- end .sign-up-email -->
+
+							<p class="sign-up-separator separator">or</p>
+
+							<section class="sign-up-social">
+								<h2 class="sign-up-title">Sign up with</h2>
+								<ul class="social">
+									<li class="social-item">
+										<a class="social-link social-link-google" href="#">Google</a>
+									</li>
+									<li class="social-item">
+										<a class="social-link social-link-facebook" href="#">Facebook</a>
+									</li>
+									<li class="social-item">
+										<a class="social-link social-link-linkedin" href="#">LinkedIn</a>
+									</li>
+								</ul>
+							</section> <!-- end .sign-up-social -->
+						</div> <!-- end .sign-up-content -->
+					</form>
+
+					<p class="sign-up-text">Already have account? <a class="sign-up-link sign-up-link-big" href="#">Log in instead.</a></p>
+				</section>
+			</div> <!-- end .container -->
+		</section>
+	</main>
+
+	<script src="js/main.min.js"></script>
+</body>
+</html>

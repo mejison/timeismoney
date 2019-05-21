@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Valid payment option | Time is money</title>
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="container page-header-content">
+			<a class="page-header-logo" href="index.html">
+				<img class="page-header-logo-image" src="images/time-is-money-logo.png" width="72" height="40" alt="Time is money logo">
+			</a>
+
+			<nav class="main-navigation">
+				<ul class="main-navigation-list">
+					<li class="main-navigation-item">
+						<a class="main-navigation-link main-navigation-link-user" href="#">
+							<img class="main-navigation-user-image" src="images/user.png" width="20" height="22" alt="John Doe image">
+							<span class="main-navigation-user-text">John Doe</span>
+						</a>
+					</li>
+					<li class="main-navigation-item">
+						<a class="main-navigation-link main-navigation-link-outline" href="#">Log out</a>
+					</li>
+				</ul>
+			</nav>
+		</div> <!-- end .container -->
+	</header>
+
+	<main class="page-content">
+		<section class="page-content-main">
+			<div class="container">
+				<h1 class="page-content-title">... and a valid payment option</h1>
+				<p class="page-content-text page-content-text-l-margin-bottom">We use Stripe to provide easiest money transfer.</p>
+
+				<form class="form" action="/echo" method="post">
+					<section class="card">
+						<header class="card-header">
+							<p class="card-heading card-heading-icon card-heading-lock">Payments processes by stripe</p>
+						</header>
+
+						<div class="card-content card-content-payment">
+							<ul class="card-list">
+								<li class="card-item card-item-payment">
+									<input class="card-input form-input form-input-grey" id="cardNumber" type="text" name="cardNumber" placeholder="Card number">
+								</li>
+								<li class="card-item">
+									<ul class="card-sub-list">
+										<li class="card-sub-item card-sub-item-date">
+											<input class="card-sub-input form-input form-input-grey" id="cardDueDate" type="text" name="cardDueDate" placeholder="MM/YY">
+										</li>
+										<li class="card-sub-item card-sub-item-cvc">
+											<input class="card-sub-input form-input form-input-grey" id="cvc" type="text" name="cvc" placeholder="CVC">
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div> <!-- end .card-content -->
+					</section> <!-- end .card -->
+
+					<button class="button button-blue" type="submit">Validate card</button>
+				</form>
+			</div> <!-- end .container -->
+		</section>
+
+		<!--<section class="page-content-additional">
+			<div class="container">
+				<h1 class="page-content-title-additional">Create your account</h1>
+				<p class="page-content-text">lorem</p>
+
+				<ul class="create-account">
+					<li class="create-account-item">
+						<a class="create-account-link create-account-link-white" href="sign-up.html">Sign up</a>
+					</li>
+					<li class="create-account-item">
+						<p class="create-account-note">Already have account?</p>
+						<a class="create-account-link" href="#">Log in</a>
+					</li>
+				</ul>
+			</div> &lt;!&ndash; end .container &ndash;&gt;
+		</section> &lt;!&ndash; end .page-content-main &ndash;&gt;-->
+	</main>
+
+	<script src="js/main.min.js"></script>
+</body>
+</html>

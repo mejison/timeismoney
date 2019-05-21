@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Create new meeting | Time is money</title>
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="container page-header-content">
+			<a class="page-header-logo" href="index.html">
+				<img class="page-header-logo-image" src="images/time-is-money-logo.png" width="72" height="40" alt="Time is money logo">
+			</a>
+			<nav class="main-navigation">
+				<ul class="main-navigation-list">
+					<li class="main-navigation-item">
+						<a class="main-navigation-link main-navigation-link-white" href="#">Sign up</a>
+					</li>
+					<li class="main-navigation-item">
+						<a class="main-navigation-link" href="#">Log in</a>
+					</li>
+				</ul>
+			</nav>
+		</div> <!-- end .container -->
+	</header>
+
+	<main class="page-content">
+		<section class="page-content-main">
+			<div class="container">
+				<h1 class="page-content-title page-content-title-l-margin-bottom">Create New Meeting</h1>
+
+				<form class="create-meeting form form-horizontal" action="/echo" method="post">
+					<fieldset class="create-meeting-group create-meeting-group-active form-group">
+						<legend class="create-meeting-title form-title">Select meeting duration...</legend>
+						<ul class="create-meeting-list form-list">
+							<li class="create-meeting-item create-meeting-item-radio form-item">
+								<input class="create-meeting-input form-radio-input" id="30min" type="radio" name="duration" value="30min">
+								<label class="form-radio-label" for="30min">30 min</label>
+							</li>
+							<li class="create-meeting-item create-meeting-item-radio form-item">
+								<input class="create-meeting-input form-radio-input" id="45min" type="radio" name="duration" value="45min">
+								<label class="form-radio-label" for="45min">45 min</label>
+							</li>
+							<li class="create-meeting-item create-meeting-item-radio form-item">
+								<input class="create-meeting-input form-radio-input" id="1hr" type="radio" name="duration" value="1hr">
+								<label class="form-radio-label" for="1hr">1 hr</label>
+							</li>
+							<li class="create-meeting-item create-meeting-item-radio form-item">
+								<input class="create-meeting-input form-radio-input" id="2hr" type="radio" name="duration" value="2hr">
+								<label class="form-radio-label" for="2hr">2 hr</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="create-meeting-group form-group">
+						<legend class="create-meeting-title form-title">... the price you want to pay ...</legend>
+						<ul class="create-meeting-list form-list">
+							<li class="create-meeting-item create-meeting-item-radio form-item">
+								<input class="create-meeting-input form-radio-input" id="$50" type="radio" name="price" value="$50">
+								<label class="form-radio-label" for="$50">$50</label>
+							</li>
+							<li class="create-meeting-item create-meeting-item-radio form-item">
+								<input class="create-meeting-input form-radio-input" id="$100" type="radio" name="price" value="$100">
+								<label class="form-radio-label" for="$100">$100</label>
+							</li>
+							<li class="create-meeting-item create-meeting-item-radio form-item">
+								<input class="create-meeting-input form-radio-input" id="$150" type="radio" name="price" value="$150">
+								<label class="form-radio-label" for="$150">$150</label>
+							</li>
+							<li class="create-meeting-item create-meeting-item-radio form-item">
+								<input class="create-meeting-input form-radio-input" id="$200" type="radio" name="price" value="$200">
+								<label class="form-radio-label" for="$200">$200</label>
+							</li>
+							<li class="create-meeting-item create-meeting-item-price form-item">
+								<input class="create-meeting-input create-meeting-input-price form-input" id="price" type="text" name="price" placeholder="Other">
+								<span class="create-meeting-icon create-meeting-icon-price"></span>
+								<!--<label class="form-price-label" for="price">Other</label>-->
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="create-meeting-group form-group">
+						<legend class="create-meeting-title form-title">... and details about the meeting</legend>
+						<ul class="create-meeting-list create-meeting-list-details form-list">
+							<li class="create-meeting-item create-meeting-item-details form-item">
+								<input class="create-meeting-input create-meeting-input-details form-input" id="meetingTitle" type="text" name="meetingTitle" placeholder="Meeting Title">
+								<span class="create-meeting-icon create-meeting-icon-title"></span>
+							</li>
+							<li class="create-meeting-item create-meeting-item-details form-item">
+								<select class="create-meeting-select create-meeting-select-details form-select" id="timeZone" name="timeZone">
+									<option value="GMT -6 (CET)">GMT -6 (CET)</option>
+									<option value="USA">USA</option>
+									<option value="Ukraine">Ukraine</option>
+								</select>
+							</li>
+							<li class="create-meeting-item create-meeting-item-details form-item">
+								<textarea class="create-meeting-textarea create-meeting-textarea-details form-textarea" id="description" name="description" placeholder="What’s the Agenda?"></textarea>
+								<span class="create-meeting-icon create-meeting-icon-description"></span>
+							</li>
+						</ul>
+						<button class="button button-blue" type="submit">Select time slots</button>
+					</fieldset>
+				</form>
+			</div> <!-- end .container -->
+		</section>
+	</main>
+
+	<script src="js/main.min.js"></script>
+</body>
+</html>
